@@ -40,8 +40,9 @@ Secure SDLC / DevSecOps Pipeline
    - Automate in Build Triggers 
    - **Jenkinsfile.old** file stages.
 
-## 5. Automated Deployment to Tomcat
-   - Adding SSH creds for the Tomcat server in the Jenkins server using SCP.
+## 5. Continuous Deployment to Tomcat through Jenkins pipeline.
+   - Adding SSH creds for the Tomcat server in the Jenkins server
+   - To transfer the .war file from the build to the tomcat server using SCP.
   
 ## 6. Checking leaked secrets in the pipeline **before** building.
    - Trufflehog
