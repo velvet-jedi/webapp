@@ -23,9 +23,9 @@ Secure SDLC / DevSecOps Pipeline
      ``` IP jenkins
      ``` IP tomcat
    - Restart the host networking service ```sudo /bin/systemctl restart systemd-hostnamed```
-   - SSH into the machines
-   ```chmod 0600 keyfile.pem```
-   ```ssh -i keyfile.pem ubuntu@jenkins```
+   - SSH into the machines <br>
+   ```chmod 0600 keyfile.pem```<br>
+   ```ssh -i keyfile.pem ubuntu@jenkins```<br>
    ```ssh -i keyfile.pem ubuntu@tomcat```
 
 2. Setup Jenkins Server
