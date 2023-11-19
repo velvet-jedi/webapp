@@ -1,6 +1,7 @@
 Web Application to display Continuous Integration and Continuous Deployment in action.
 
-Insert Image here
+![image](https://github.com/velvet-jedi/webapp/assets/132247456/290925a3-9c92-4622-b7db-944c7afa6b6a)
+
 
 
 # How to THINK?
