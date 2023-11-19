@@ -1,5 +1,6 @@
-Web Application to display Continuous Integration and Continuous Deployment in action.
+# Web Application to display Continuous Integration and Continuous Deployment in action.
 
+Basic CI/CD Pipeline
 ![image](https://github.com/velvet-jedi/webapp/assets/132247456/290925a3-9c92-4622-b7db-944c7afa6b6a)
 
 
