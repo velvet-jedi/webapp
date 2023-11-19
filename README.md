@@ -14,9 +14,8 @@ Secure SDLC / DevSecOps Pipeline
 5. SSDLC can't replace an actual pentest.
 
 # Project Timeline
-1. Deploy 2 EC2 instances.
-   
-   - Use create a new SSH key pair to log into the machines using CLI.
+## 1. Deploy Ubuntu EC2 instances.
+   - Create a new SSH key pair to log into the machines using CLI.
    - Set the security groups.
    - edit the hosts file and add the new hosts for reachability from the local machine.
      ```sudo nano /etc/hosts
@@ -28,23 +27,26 @@ Secure SDLC / DevSecOps Pipeline
    ```ssh -i keyfile.pem ubuntu@jenkins```<br>
    ```ssh -i keyfile.pem ubuntu@tomcat```
 
-2. Setup Jenkins Server
-   - Installing Java JDK, docker, maven, and suggested plugins (maven integration, SSH agent, Blue Ocean).
+## 2. Setup Jenkins Server
+   - Installing JAVA JDK, docker, maven, and suggested plugins (maven integration, SSH agent, Blue Ocean).
    - Activate Jenkins.
    - Configure maven installation from ```/usr/share/maven```
 
-2. Set up the Tomcat server on the EC2 instance.
+## 3. Set up the Tomcat server on the EC2 instance.
+   - Install JAVA
 
-3. Creating Build Pipeline in Jenkins.
-   - Used Jenkinsfile stages
+## 4. Creating Build Pipeline in Jenkins.
+   - Build the webapp pipeline project in Jenkins using Github url.
+   - Automate in Build Triggers 
+   - **Jenkinsfile.old** file stages.
 
-4. Automated Deployment to Tomcat
+## 5. Automated Deployment to Tomcat
    - Adding SSH creds for the Tomcat server in the Jenkins server using SCP.
   
-5. Checking leaked secrets in the pipeline **before** building.
+## 6. Checking leaked secrets in the pipeline **before** building.
    - Trufflehog
   
-6. Source Composition Analysis
+## 7. Source Composition Analysis
    - Use Snyk / Owasp Dependency Check
    - Maven uses pom.xml to consolidate the configuration and dependency-related information for scanning prior to build.
 
